@@ -13,5 +13,7 @@ class RegistroTemperatura extends Model
         'tipo',
         'valor_original',
         'valor_corregido',
+        'created_at',
+        'updated_at'
     ];
 }
