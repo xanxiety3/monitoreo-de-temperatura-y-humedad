@@ -202,4 +202,7 @@ class RegistroTemperaturaController extends Controller
 
         return $valor;
     }
+
+
+
 }

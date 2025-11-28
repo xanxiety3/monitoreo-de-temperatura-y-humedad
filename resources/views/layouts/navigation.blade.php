@@ -22,9 +22,15 @@
                     </x-nav-link>
                 </div>
 
-                  <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('parametros.index')" :active="request()->routeIs('parametros.index')">
                         {{ __('Factor de corrección') }}
+                    </x-nav-link>
+                </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('graficas')" :active="request()->routeIs('graficas.index')">
+                        {{ __('Gráficos') }}
                     </x-nav-link>
                 </div>
 

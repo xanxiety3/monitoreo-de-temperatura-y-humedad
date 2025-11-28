@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GraficasController;
 use App\Http\Controllers\ParametrizacionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegistroTemperaturaController;
@@ -23,6 +24,10 @@ Route::middleware('auth')->group(function () {
 
 
     Route::post('/registro', [RegistroTemperaturaController::class, 'storeAmbos'])->name('registros.storeAmbos');
+
+
+    Route::get('/graficas', [GraficasController::class, 'graficas'])
+        ->name('graficas');
 });
 
 require __DIR__ . '/auth.php';
